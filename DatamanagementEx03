@@ -17,5 +17,7 @@ public class DiceGame {
         System.out.println("Dice1: " + die1);
         System.out.println("Dice2: " + die2);
         System.out.println("Total value: " + sum);
+        if(sum >= 8) Syatem.out.println("You Won");
+        else System.out.println("You Lost");
     }
 }
