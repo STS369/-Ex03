@@ -1,0 +1,17 @@
+import java.util.Random;
+
+public class DiceGame {
+    public static void main(String[] args) {
+        System.out.println("Rolling dice...");
+        Random rand = new Random();          // 乱数生成器を用意
+
+        int die1 = rand.nextInt(6) + 1;      // 1〜6 のいずれか
+        int die2 = rand.nextInt(6) + 1;      // 1〜6 のいずれか
+        int sum  = die1 + die2;              // 合計を計算
+
+        // 結果を出力
+        System.out.println("Dice1: " + die1);
+        System.out.println("Dice2: " + die2);
+        System.out.println("Total value: " + sum);
+    }
+}
