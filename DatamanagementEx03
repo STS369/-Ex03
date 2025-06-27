@@ -1,4 +1,8 @@
 import java.util.Random;
+//挨拶
+public class AskName{
+
+}
 
 public class DiceGame {
     public static void main(String[] args) {
