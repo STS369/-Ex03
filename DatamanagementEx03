@@ -1,11 +1,15 @@
 import java.util.Random;
-//挨拶
-public class AskName{
-
-}
+import java.util.Scanner;
 
 public class DiceGame {
     public static void main(String[] args) {
+        //挨拶
+        Scanner scanner = new Scanner(System.in);        // 標準入力（キーボード）を読み取る
+        System.out.print("What is your name? ");         // 質問を表示（改行しない）
+        String name = scanner.nextLine();                // 1 行分の文字列を取得
+        System.out.println("Hello, " + name + "!");      // あいさつ
+
+        //ダイスを振る
         System.out.println("Rolling dice...");
         Random rand = new Random();          // 乱数生成器を用意
 
